@@ -2,7 +2,7 @@
     padding-top: 180px !important;
     min-height: 100vh;
     /* background-image: url(/public/background.jpg); */
-    background-color: rgb(243, 237, 255);
+    background-color: rgb(242, 237, 250);
     background-size: cover;
     width: 100%;
 }
@@ -29,18 +29,34 @@
     font-size: 3rem;
     font-family: 'Baloo Bhai 2', sans-serif;
     font-weight: 600;
-    color: #57098a;
+    color: #0d0512;
     text-align: center;
 }
 .hero-text{
     font-family: 'baloo bhai 2', sans-serif;
     font-size: 1.3rem;
-    color: #130228;
+    color: #0f0718;
     margin-top: 1rem;
     text-align: center;
     line-height: 1.6;
 }
 
+.social-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.05);
+}
+
+.contact-Me {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media (max-width: 992px) {
     .hero-content {
         text-align: center; 
