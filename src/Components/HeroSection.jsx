@@ -11,9 +11,9 @@ export default function HeroSection() {
               Hi, I’m <span className="highlight">Manav Bansal</span>
             </h1>
             <p className="hero-text">
-              ntium vitae. Quaerat culpa recusandae distinctio dolor expedita. 
-              Harum architecto nihil tempora velit veritatis!
+            I'm a third-year CS student at SFU. Explore my portfolio to see my projects, skills, and the work I'm passionate about.
             </p>
+            
           </div>
           <div className="col-lg-6 d-flex justify-content-center">
             <div className="image-box">
