@@ -1,0 +1,26 @@
+.project-box{
+    padding: 0 5vw;
+    background-color: rgba(215, 215, 222, 0.517);
+    margin: 10vw;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.project-box:hover{
+    box-shadow: 0 4px 8px rgba(152, 121, 172, 0.1);
+    transform: translateY(-1px);
+    transition: 0.3s ease;
+}
+
+.project-heading{
+    font-size : 2rem;
+    justify-content: center;
+    font-family: 'baloo bhai 2', sans-serif;
+    font-weight : 600;
+    padding-top: 20px;
+}
+.project-image{
+    max-width: 330px;
+    margin-bottom: 40px;
+    border-radius: 16px;
+}
