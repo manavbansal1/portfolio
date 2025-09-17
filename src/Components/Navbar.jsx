@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '../CSS/Navbar.css';
@@ -7,7 +8,8 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container">
-        <a className="navbar-brand me-auto mx-3" href="#">Portfolio</a>
+        <NavLink className="navbar-brand me-auto mx-3" to="/">Portfolio</NavLink>
+        
         <div
           className="offcanvas offcanvas-end"
           tabIndex="-1"
@@ -16,34 +18,29 @@ export default function Navbar() {
         >
           <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Manav's Portfolio</h5>
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+            <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
               <li className="nav-item">
-                <a className="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                <NavLink to="/" end className={({ isActive }) => 'nav-link mx-lg-2' + (isActive ? ' active' : '')}>Home</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link mx-lg-2" href="#">Projects</a>
+                <NavLink to="/projects" className={({ isActive }) => 'nav-link mx-lg-2' + (isActive ? ' active' : '')}>Projects</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link mx-lg-2" href="#">Experience</a>
+                <NavLink to="/experience" className={({ isActive }) => 'nav-link mx-lg-2' + (isActive ? ' active' : '')}>Experience</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link mx-lg-2" href="#">Skills</a>
+                <NavLink to="/skills" className={({ isActive }) => 'nav-link mx-lg-2' + (isActive ? ' active' : '')}>Skills</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link mx-lg-2" href="#">About</a>
+                <NavLink to="/about" className={({ isActive }) => 'nav-link mx-lg-2' + (isActive ? ' active' : '')}>About</NavLink>
               </li>
             </ul>
           </div>
         </div>
-        <a className="contact-button" href="#" role="button">Contact</a>
+        <NavLink className="contact-button" to="/contact" role="button">Contact</NavLink>
         <button
           className="navbar-toggler pe-0"
           type="button"
