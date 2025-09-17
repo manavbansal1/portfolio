@@ -1,0 +1,44 @@
+.hero-section{
+    padding-top: 180px !important;
+    min-height: 100vh;
+    /* background-image: url(/public/background.jpg); */
+    background-color: rgb(243, 237, 255);
+    background-size: cover;
+    width: 100%;
+}
+.hero-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(132, 132, 134, 0.6);
+}
+
+.hero-content{
+    z-index: 1;
+    position: relative;
+}
+
+.image-box{
+    max-width: 330px;
+    width: 75vw;
+}
+.hero-title{
+    font-size: 3rem;
+    font-family: 'Baloo Bhai 2', sans-serif;
+    font-weight: 600;
+    color: #57098a;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .hero-content {
+        text-align: center; 
+    }
+
+    .image-box {
+        margin-top: 2rem; 
+    }
+}

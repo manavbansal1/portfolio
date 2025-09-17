@@ -6,8 +6,8 @@ import '../CSS/Navbar.css';
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
-      <div className="container-fluid">
-        <a className="navbar-brand me-auto mx-5" href="#">Logo</a>
+      <div className="container">
+        <a className="navbar-brand me-auto mx-3" href="#">Portfolio</a>
         <div
           className="offcanvas offcanvas-end"
           tabIndex="-1"
@@ -15,7 +15,7 @@ export default function Navbar() {
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Manav's Portfolio</h5>
             <button
               type="button"
               className="btn-close"
@@ -23,30 +23,29 @@ export default function Navbar() {
               aria-label="Close"
             ></button>
           </div>
-
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
               <li className="nav-item">
                 <a className="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
               </li>
               <li className="nav-item">
+                <a className="nav-link mx-lg-2" href="#">Projects</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link mx-lg-2" href="#">Experience</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link mx-lg-2" href="#">Skills</a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link mx-lg-2" href="#">About</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link mx-lg-2" href="#">Item3</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link mx-lg-2" href="#">item4</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link mx-lg-2" href="#">item5</a>
               </li>
             </ul>
           </div>
         </div>
         <a className="contact-button" href="#" role="button">Contact</a>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler pe-0"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar"
