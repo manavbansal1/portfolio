@@ -2,10 +2,15 @@ import React from "react";
 import { marked } from "marked";
 import "../CSS/Project.css";
 
-const Project = ({ title,description, technologies = [], image, github, website }) => {
+const Project = ({ title, role, date, description, technologies = [], image, github, website }) => {
     return (
         <div className="project-box">
         <h1 className="project-heading">{title}</h1>
+        <div className="project-subtitle mb-3">
+                {role && <span className="project-role">{role}</span>}
+                {role && date && <span> | </span>}
+                {date && <span className="project-date">{date}</span>}
+        </div>
         <div className="row project-content align-items-center">
             <div className="project-image-container col-lg-4 col-md-12 d-flex flex-column align-items-center">
             <img src={image} alt={`${title}-img`} className="project-image" />
@@ -32,4 +37,4 @@ const Project = ({ title,description, technologies = [], image, github, website 
         </div>
     );
 };
-export default Project;
+export default Project; 
