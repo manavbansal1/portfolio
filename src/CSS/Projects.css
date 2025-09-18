@@ -1,9 +1,14 @@
-.project-page-container{
-    padding-top: 140px;
-    align-items: center;
-    background-color: rgb(178, 174, 237);
-    min-height: 100vh;
+.project-page-container {
+  padding-top: 140px;
+  display: flex;             
+  flex-direction: column;       
+  align-items: center;          
+  justify-content: flex-start;  
+  background-color: rgb(178, 174, 237);
+  min-height: 100vh;
+  text-align: center;       
 }
+
 .heading{
     font-size: 2.5rem;
     font-weight: 600;

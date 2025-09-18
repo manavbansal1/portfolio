@@ -17,7 +17,7 @@ const Project = ({ title,description, technologies = [], image, github, website 
             </div>
             <div className="col-lg-8 col-md-12 col-sm-12 project-text">
             <div
-            className="project-description"
+            className="project-description mx-sm-4 mx-md-4"
             dangerouslySetInnerHTML={{ __html: marked.parse(description || "") }}
             />
             <div className="tech-stack">
