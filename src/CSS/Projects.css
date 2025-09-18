@@ -4,13 +4,13 @@
   flex-direction: column;       
   align-items: center;          
   justify-content: flex-start;  
-  background-color: rgb(178, 174, 237);
+  background-color: rgb(255, 255, 255);
   min-height: 100vh;
   text-align: center;       
 }
 .heading {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 3.5rem;
+  font-weight: 800;
   margin-bottom: 3rem;
   font-family: 'Baloo Bhai 2', sans-serif;
   background: linear-gradient(135deg, rgb(37, 9, 94) 0%, rgb(88, 28, 135) 50%, rgb(124, 58, 237) 100%);

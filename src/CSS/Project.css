@@ -8,6 +8,7 @@
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     max-width: 1200px;
     margin: 30px auto;
+    margin-top: 0 !important;
     width: 90vw;
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
@@ -224,17 +225,17 @@
     }
     
     .tech-stack {
-        justify-content: center; /* Center on mobile for better appearance */
+        justify-content: center; 
         margin-bottom: 15px;
     }
     
     .project-text {
-        align-items: center; /* Center align on mobile */
-        text-align: center; /* Center text on mobile */
+        align-items: center; 
+        text-align: center; 
     }
     
     .project-description {
-        text-align: left; /* Keep description left-aligned even on mobile */
+        text-align: left; 
     }
     
     .project-description p,

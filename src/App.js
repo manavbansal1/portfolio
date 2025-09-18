@@ -2,7 +2,6 @@ import Navbar from './Components/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home';
 import Projects from './Components/Projects';
-import Experience from './Components/Experience';
 import Skills from './Components/Skills';
 import About from './Components/About';
 
@@ -16,7 +15,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/experience" element={<Experience />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/about" element={<About />} />
       </Routes>

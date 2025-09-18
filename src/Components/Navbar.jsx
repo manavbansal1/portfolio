@@ -29,9 +29,6 @@ export default function Navbar() {
                 <NavLink to="/projects" className={({ isActive }) => 'nav-link mx-lg-2' + (isActive ? ' active' : '')}>Projects</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/experience" className={({ isActive }) => 'nav-link mx-lg-2' + (isActive ? ' active' : '')}>Experience</NavLink>
-              </li>
-              <li className="nav-item">
                 <NavLink to="/skills" className={({ isActive }) => 'nav-link mx-lg-2' + (isActive ? ' active' : '')}>Skills</NavLink>
               </li>
               <li className="nav-item">
