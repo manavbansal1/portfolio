@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# 🌐 Manav Bansal – Portfolio Website  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the source code for my **personal portfolio website**, built with **React.js** and deployed on **Vercel**.  
+It showcases my projects, skills, academic background, and experiences as a **Computer Science student at Simon Fraser University**.  
 
-## Available Scripts
+## 🚀 Live Demo  
+👉 [View Portfolio](https://portfolio-rho-two-xnrbvq8id0.vercel.app/)  
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ About Me  
+Hi! I'm **Manav Bansal**, a passionate third-year **Computer Science student at SFU** (GPA: 4.28/4.33).  
+I’m fascinated by both **low-level systems programming** and **high-level user experiences**, and I love building solutions that connect the two.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🎓 Academic Focus: Systems Programming, Operating Systems, Networks, Software Engineering  
+- 💻 Technical Strengths: React.js, C, Memory Management, Networking, Full-Stack Development  
+- 📱 Current Focus: Mobile Development with Kotlin & Android  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend:** React.js, Bootstrap, HTML5, CSS3, Figma  
+- **Backend / Systems:** C, C++, Python, Java, Custom Protocols, Memory Allocators  
+- **Mobile:** Kotlin, Android Studio  
+- **DevOps & Tools:** Git, GitHub Actions, AWS Amplify, Docker, CMake  
+- **Testing & Debugging:** Postman, Telnet, GDB, Valgrind, Fuzz Testing  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Featured Projects  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🧭 WanderWise  
+*Project Manager & Full Stack Developer*  
+- Built a React.js-based travel planner with Google Maps & Gemini APIs.  
+- Implemented CI/CD pipeline with GitHub Actions + AWS Amplify.  
+- [GitHub Repo](https://github.com/manavbansal1/WanderWise) | [Live Site](https://wander-wise-three.vercel.app/)  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🎮 Team Box Conquest  
+*Developer*  
+- Multiplayer real-time socket-based grid game in C with concurrency control.  
 
-### `npm run eject`
+### 🧮 Custom Memory Allocator  
+*Developer*  
+- Implemented a heap allocator with **First Fit, Best Fit, Worst Fit** strategies in C.  
+- [GitHub Repo](https://github.com/manavbansal1/custom-memory-allocator)  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 💬 Group Chat Server with Fuzzing Clients  
+*Developer*  
+- TCP/IP chat server in C with concurrency, fuzzing clients, and custom binary protocol.  
+- [GitHub Repo](https://github.com/manavbansal1/Group-Chat-Server-with-Fuzzing-Clients)  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ⚙️ Getting Started  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run the portfolio locally:  
 
-## Learn More
+```bash
+# Clone the repository
+git clone https://github.com/manavbansal1/portfolio.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Navigate into the project
+cd portfolio
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Install dependencies
+npm install
 
-### Code Splitting
+# Start the development server
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📬 Contact
+- **Portfolio**: [portfolio-rho-two-xnrbvq8id0.vercel.app](https://portfolio-rho-two-xnrbvq8id0.vercel.app)  
+- **GitHub**: [manavbansal1](https://github.com/manavbansal1)  
+- **LinkedIn**: [linkedin.com/in/manavbansal39](https://linkedin.com/in/manavbansal39)  
+- **Email**: [bansalmanav39@gmail.com](mailto:bansalmanav39@gmail.com)  
