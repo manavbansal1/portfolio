@@ -5,7 +5,6 @@ import '../CSS/About.css';
 
 const About = () => {
   return (
-    
   <div className="about-container">
       <div className="container">
         <div className="row justify-content-center mb-4">
@@ -49,8 +48,6 @@ const About = () => {
               </div>
             </div>
           </div>
-
-          {/* Academic Excellence */}
           <div className="col-lg-6">
             <div className="about-card">
               <div className="card-icon">

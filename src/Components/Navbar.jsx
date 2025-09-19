@@ -4,12 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '../CSS/Navbar.css';
 
-export default function Navbar() {
+export default function Navbar( {onContactClick}) {
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container">
         <NavLink className="navbar-brand me-auto mx-3" to="/">Portfolio</NavLink>
-        
         <div
           className="offcanvas offcanvas-end"
           tabIndex="-1"
@@ -37,7 +36,7 @@ export default function Navbar() {
             </ul>
           </div>
         </div>
-        <NavLink className="contact-button" to="/" role="button">Contact</NavLink>
+        <button className="contact-button" onClick={onContactClick}>Contact</button>
         <button
           className="navbar-toggler pe-0"
           type="button"
