@@ -74,6 +74,7 @@ const Projects = () => {
   return (
     <div className="project-page-container">
       <h1 className="heading">Featured Projects</h1>
+      <h2 className='about-subtitle baloo'>A showcase of my technical projects and development work</h2>
       {projectsData.map((project, index) => (
         <Project
           key={index}

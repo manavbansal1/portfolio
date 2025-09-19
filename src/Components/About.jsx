@@ -78,8 +78,6 @@ const About = () => {
               </div>
             </div>
           </div>
-
-          {/* Technical Philosophy */}
           <div className="col-lg-6">
             <div className="about-card">
               <div className="card-icon">
@@ -149,26 +147,26 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="col-12">
+          <div className="col-12 fun-facts-section">
             <div className="about-card fun-facts-card">
               <div className="card-icon">
                 <Coffee size={32} />
               </div>
               <h2 className="card-title">Fun Facts About Me</h2>
               <div className="row">
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-12 my-3">
                   <div className="fun-fact">
                     <h4>🚀 First Programming Language</h4>
-                    <p>Started with Java and fell in love with problem-solving</p>
+                    <p>Started with Python and fell in love with problem-solving</p>
                   </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-lg-4  col-md-12 my-3">
                   <div className="fun-fact">
                     <h4>💡 Favorite Project Type</h4>
                     <p>Systems programming - there's something magical about low-level code</p>
                   </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-12 my-3">
                   <div className="fun-fact">
                     <h4>🎯 Career Goal</h4>
                     <p>To bridge the gap between complex systems and intuitive user experiences</p>
