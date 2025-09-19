@@ -1,6 +1,6 @@
 .hero-section{
     position: relative;
-    padding-top: 180px !important;
+    padding-top: 270px !important;
     min-height: 100vh;
     /* background-image: url(/public/background.jpg); */
     background: linear-gradient(135deg, #f8f9ff 0%, #e8e5f3 100%);
@@ -20,14 +20,14 @@
 }
 
 .image-box{
-    max-width: 330px;
+    max-width: 350px;
     width: 75vw;
 }
 .hero-title{
     font-size: 3rem;
     font-family: 'Baloo Bhai 2', sans-serif;
-    font-weight: 600;
-    color: #0d0512;
+    font-weight: 700;
+    color: #250738;
     text-align: center;
 }
 .hero-text{
@@ -58,6 +58,9 @@
 @media (max-width: 992px) {
     .hero-content {
         text-align: center; 
+    }
+    .hero-section{
+        padding-top: 140px !important;
     }
 
     .image-box {
