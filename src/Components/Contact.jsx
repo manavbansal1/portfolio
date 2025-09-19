@@ -11,14 +11,21 @@ const Contact = ({ isOpen, onClose }) => {
         setFormData({ ...formData, [e.target.name]: e.target.value});
     };  
 
+    const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log('Service ID:', process.env.REACT_APP_EMAILJS_SERVICE_ID);
+        console.log('Template ID:', process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
+        console.log('Public Key:', process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
         setStatus('sending');
 
         try {
         const result = await emailjs.send(
-            'YOUR_SERVICE_ID',     // Get from EmailJS dashboard
-            'YOUR_TEMPLATE_ID',    // Get from EmailJS dashboard
+            serviceID,     // Service ID from EmailJS dashboard
+            templateID,    // Template ID from EmailJS dashboard
             {
             from_name: formData.name,
             from_email: formData.email,
@@ -26,7 +33,7 @@ const Contact = ({ isOpen, onClose }) => {
             message: formData.message,
             to_email: 'bansalmanav39@gmail.com'
             },
-            'YOUR_PUBLIC_KEY'     
+            publicKey      // Public Key     
         );
 
         setStatus('success');
