@@ -4,7 +4,7 @@ This repository contains the source code for my **personal portfolio website**, 
 It showcases my projects, skills, academic background, and experiences as a **Computer Science student at Simon Fraser University**.  
 
 ## 🚀 Live Demo  
-👉 [View Portfolio](https://portfolio-rho-two-xnrbvq8id0.vercel.app/)  
+👉 [View Portfolio](https://manavbansal.vercel.app/)  
 
 ---
 
@@ -71,7 +71,7 @@ npm start
 ```
 
 ## 📬 Contact
-- **Portfolio**: [portfolio-rho-two-xnrbvq8id0.vercel.app](https://portfolio-rho-two-xnrbvq8id0.vercel.app)  
+- **Portfolio**: [manavbansal.vercel.app](https://manavbansal.vercel.app)  
 - **GitHub**: [manavbansal1](https://github.com/manavbansal1)  
 - **LinkedIn**: [linkedin.com/in/manavbansal39](https://linkedin.com/in/manavbansal39)  
 - **Email**: [bansalmanav39@gmail.com](mailto:bansalmanav39@gmail.com)  
