@@ -37,7 +37,7 @@ export default function Navbar() {
             </ul>
           </div>
         </div>
-        <NavLink className="contact-button" to="/contact" role="button">Contact</NavLink>
+        <NavLink className="contact-button" to="/" role="button">Contact</NavLink>
         <button
           className="navbar-toggler pe-0"
           type="button"

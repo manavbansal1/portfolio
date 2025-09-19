@@ -67,3 +67,16 @@
         margin-top: 2rem; 
     }
 }
+@media (max-width: 576px) {
+    .hero-title {
+        margin-top: 20px;
+        font-size: 2.2rem; 
+    }
+    .hero-text {
+        font-size: 1.1rem; 
+        padding: 0 1rem; 
+    }
+    .image-box {
+        max-width: 250px; 
+    }
+}
