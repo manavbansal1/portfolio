@@ -4,12 +4,12 @@
   flex-direction: column;       
   align-items: center;          
   justify-content: flex-start;  
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8e5f3 100%);
   min-height: 100vh;
   text-align: center;       
 }
 .heading {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 800;
   margin-bottom: 3rem;
   font-family: 'Baloo Bhai 2', sans-serif;
@@ -21,6 +21,7 @@
   animation: fadeInUp 1s ease-out;
   line-height: 1.2;
 }
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -41,6 +42,7 @@
     transform: scale(1);
   }
 }
+
 @keyframes expandLine {
   from {
     width: 0;

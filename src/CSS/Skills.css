@@ -189,7 +189,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .skills-container {
         padding: 1rem 0;
     }
@@ -227,7 +227,7 @@
     
     .skill-category {
         padding: 1rem;
-        width: 80%;
+        width: 90%;
     }
     
     .category-title {
