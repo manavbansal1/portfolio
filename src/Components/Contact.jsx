@@ -61,13 +61,13 @@ const Contact = ({ isOpen, onClose }) => {
             <div className="row">
                 <div className="col-md-6">
                 <div className="form-group">
-                    <label htmlFor="name">Name *</label>
+                    <label htmlFor="name">Name <span className="redStar">*</span></label>
                     <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required disabled={status === 'sending'}/>
                 </div>
                 </div>
                 <div className="col-md-6">
                 <div className="form-group">
-                    <label htmlFor="email">Email *</label>
+                    <label htmlFor="email">Email <span className="redStar">*</span></label>
                     <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required disabled={status === 'sending'} />
                 </div>
                 </div>
@@ -77,7 +77,7 @@ const Contact = ({ isOpen, onClose }) => {
                 <label htmlFor="subject">Subject <span className="redStar">*</span></label>
                 <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} required disabled={status === 'sending'}/>
             </div>
-            <div className="form-group"><label htmlFor="message">Message *</label>
+            <div className="form-group"><label htmlFor="message">Message <span className="redStar">*</span></label>
                 <textarea id="message" name="message" rows="5" value={formData.message} onChange={handleChange} required disabled={status === 'sending'} ></textarea>
             </div>
             <div className="form-actions">

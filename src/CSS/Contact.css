@@ -202,6 +202,10 @@
   }
 }
 
+.redStar{
+  color: red;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .contact-modal {
