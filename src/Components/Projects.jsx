@@ -5,8 +5,10 @@ import teamBoxImage from '../Imgs/teamboxConquest.png';
 import memoryImage from '../Imgs/custom-memory.png';
 import chatServerImage from '../Imgs/chatServer.png';
 import wanderwiseImage from '../Imgs/WanderWise.png';
+import pingmeImage from '../Imgs/pingme.png'
 
-const projectsData = [ {
+const projectsData = [ 
+  {
     title: "WanderWise",
     role: "Project Manager & Full Stack Developer",
     date: "Sep. - Dec. 2024",
@@ -20,6 +22,19 @@ const projectsData = [ {
     image: wanderwiseImage,
     github: "https://github.com/manavbansal1/WanderWise",
     website: "https://wander-wise-three.vercel.app/"
+  },{
+    title: "PingME",
+    role: "Full Stack Developer",
+    date: "Sep. 2025",
+    description: `
+- Built a real-time chat application with user authentication, online status tracking, and instant messaging using Socket.io for bidirectional communication.
+- Developed RESTful API with Express.js and MongoDB for user management and message persistence, implementing JWT-based authentication with HTTP-only cookies.
+- Designed responsive UI with React and custom CSS, integrating Cloudinary for image storage and Zustand for state management.
+`,
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Socket.io", "Cloudinary", "Zustand", "JWT"],
+    image: pingmeImage,
+    github: "https://github.com/manavbansal1/PingMe",
+    website: "https://pingme-rf7s.onrender.com/"
   },
   {
     title: "Team Box Conquest",
