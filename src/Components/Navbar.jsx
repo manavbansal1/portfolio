@@ -1,19 +1,26 @@
 import React, {useState} from 'react';
-import { NavLink } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../CSS/Navbar.css';
 
 export default function Navbar( {onContactClick}) {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const handleLinkClick = () => {
     setIsOpen(false);
   };
 
+  const getLinkClass = (path) => {
+    const isActive = pathname === path;
+    return `nav-link mx-lg-2${isActive ? ' active' : ''}`;
+  }
+
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container">
-        <NavLink className="navbar-brand me-auto mx-3" to="/">Portfolio</NavLink>
+        <Link className="navbar-brand me-auto mx-3" href="/">Portfolio</Link>
         <div
           className={`offcanvas offcanvas-end ${isOpen ? 'show' : ''}`}
           tabIndex="-1"
@@ -28,16 +35,16 @@ export default function Navbar( {onContactClick}) {
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
               <li className="nav-item">
-                <NavLink to="/" end className={({ isActive }) => 'nav-link mx-lg-2' + (isActive ? ' active' : '')} onClick={handleLinkClick}>Home</NavLink>
+                <Link href="/" className={getLinkClass('/')} onClick={handleLinkClick}>Home</Link>
               </li>
               <li className="nav-item">
-                <NavLink to="/projects" className={({ isActive }) => 'nav-link mx-lg-2' + (isActive ? ' active' : '')} onClick={handleLinkClick}>Projects</NavLink>
+                <Link href="/projects" className={getLinkClass('/projects')} onClick={handleLinkClick}>Projects</Link>
               </li>
               <li className="nav-item">
-                <NavLink to="/skills" className={({ isActive }) => 'nav-link mx-lg-2' + (isActive ? ' active' : '')} onClick={handleLinkClick}>Skills</NavLink>
+                <Link href="/skills" className={getLinkClass('/skills')} onClick={handleLinkClick}>Skills</Link>
               </li>
               <li className="nav-item">
-                <NavLink to="/about" className={({ isActive }) => 'nav-link mx-lg-2' + (isActive ? ' active' : '')} onClick={handleLinkClick}>About</NavLink>
+                <Link href="/about" className={getLinkClass('/about')} onClick={handleLinkClick}>About</Link>
               </li>
             </ul>
           </div>

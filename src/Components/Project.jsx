@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { marked } from "marked";
 import "../CSS/Project.css";
 
@@ -13,7 +14,7 @@ const Project = ({ title, role, date, description, technologies = [], image, git
         </div>
         <div className="row project-content align-items-center">
             <div className="project-image-container col-lg-4 col-md-12 d-flex flex-column align-items-center">
-            <img src={image} alt={`${title}-img`} className="project-image" />
+            <Image src={image} alt={`${title}-img`} className="project-image" />
 
             <div className="project-links">
                 {github && ( <a href={github} target="_blank" rel="noopener noreferrer" className="btn-link-gt github">GitHub</a>)}
