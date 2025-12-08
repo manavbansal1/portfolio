@@ -1,77 +1,69 @@
-# 🌐 Manav Bansal – Portfolio Website  
+# Manav Bansal
 
-This repository contains the source code for my **personal portfolio website**, built with **React.js** and deployed on **Vercel**.  
-It showcases my projects, skills, academic background, and experiences as a **Computer Science student at Simon Fraser University**.  
+**Computer Science Student at Simon Fraser University**
 
-## 🚀 Live Demo  
-👉 [View Portfolio](https://manavbansal.vercel.app/)  
+[Portfolio](https://manavbansal.vercel.app/) | [GitHub](https://github.com/manavbansal1) | [LinkedIn](https://linkedin.com/in/manavbansal39) | [Email](mailto:bansalmanav39@gmail.com)
 
 ---
 
-## ✨ About Me  
-Hi! I'm **Manav Bansal**, a passionate third-year **Computer Science student at SFU** (GPA: 4.28/4.33).  
-I’m fascinated by both **low-level systems programming** and **high-level user experiences**, and I love building solutions that connect the two.  
+## About
 
-- 🎓 Academic Focus: Systems Programming, Operating Systems, Networks, Software Engineering  
-- 💻 Technical Strengths: React.js, C, Memory Management, Networking, Full-Stack Development  
-- 📱 Current Focus: Mobile Development with Kotlin & Android  
+Personal portfolio website showcasing my projects, technical skills, and academic background. I am a third-year Computer Science student (GPA: 4.28/4.33) with a strong focus on systems programming, operating systems, and full-stack development. I enjoy bridging the gap between low-level system efficiency and high-level user experience.
+
+## Technical Skills
+
+- **Languages**: C, C++, Python, Java, Kotlin, JavaScript, TypeScript, SQL
+- **Frontend**: React.js, Next.js, HTML5, CSS3, Bootstrap, Tailwind CSS
+- **Backend & Systems**: Node.js, Express, Socket Programming, Multi-threading, Custom Allocators
+- **Tools & DevOps**: Git, Docker, AWS Amplify, GitHub Actions, Linux/Unix, GDB, Valgrind
+
+## Featured Projects
+
+### WanderWise
+**Full Stack Developer & Project Lead**
+A comprehensive travel planning application integrating Google Maps and Gemini AI APIs to generate personalized itineraries.
+- Built with React.js and integrated real-time data services.
+- Established a CI/CD pipeline using GitHub Actions and AWS Amplify for automated deployment.
+
+### Team Box Conquest
+**Systems Developer**
+A real-time multiplayer implementation of the "Dots and Boxes" game.
+- Developed in C using socket programming for low-latency network communication.
+- Implemented concurrency control mechanisms to handle multiple game sessions simultaneously.
+
+### Custom Memory Allocator
+**Systems Developer**
+A custom implementation of `malloc` and `free` in C.
+- Designed algorithms for First Fit, Best Fit, and Worst Fit allocation strategies.
+- Optimized for reduced fragmentation and efficient memory block management.
+
+### Group Chat Server
+**Systems Developer**
+A robust TCP/IP chat server capable of handling multiple concurrent clients.
+- Designed a custom binary protocol for efficient message exchange.
+- Integrated fuzzing clients to test server stability and handle edge cases.
+
+## Getting Started
+
+To run the portfolio locally:
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/manavbansal1/portfolio.git
+    cd portfolio
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    ```
+
+    Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ---
-
-## 🛠️ Tech Stack  
-
-- **Frontend:** React.js, Bootstrap, HTML5, CSS3, Figma  
-- **Backend / Systems:** C, C++, Python, Java, Custom Protocols, Memory Allocators  
-- **Mobile:** Kotlin, Android Studio  
-- **DevOps & Tools:** Git, GitHub Actions, AWS Amplify, Docker, CMake  
-- **Testing & Debugging:** Postman, Telnet, GDB, Valgrind, Fuzz Testing  
-
----
-
-## 📂 Featured Projects  
-
-### 🧭 WanderWise  
-*Project Manager & Full Stack Developer*  
-- Built a React.js-based travel planner with Google Maps & Gemini APIs.  
-- Implemented CI/CD pipeline with GitHub Actions + AWS Amplify.  
-- [GitHub Repo](https://github.com/manavbansal1/WanderWise) | [Live Site](https://wander-wise-three.vercel.app/)  
-
-### 🎮 Team Box Conquest  
-*Developer*  
-- Multiplayer real-time socket-based grid game in C with concurrency control.  
-
-### 🧮 Custom Memory Allocator  
-*Developer*  
-- Implemented a heap allocator with **First Fit, Best Fit, Worst Fit** strategies in C.  
-- [GitHub Repo](https://github.com/manavbansal1/custom-memory-allocator)  
-
-### 💬 Group Chat Server with Fuzzing Clients  
-*Developer*  
-- TCP/IP chat server in C with concurrency, fuzzing clients, and custom binary protocol.  
-- [GitHub Repo](https://github.com/manavbansal1/Group-Chat-Server-with-Fuzzing-Clients)  
-
----
-
-## ⚙️ Getting Started  
-
-To run the portfolio locally:  
-
-```bash
-# Clone the repository
-git clone https://github.com/manavbansal1/portfolio.git
-
-# Navigate into the project
-cd portfolio
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm start
-```
-
-## 📬 Contact
-- **Portfolio**: [manavbansal.vercel.app](https://manavbansal.vercel.app)  
-- **GitHub**: [manavbansal1](https://github.com/manavbansal1)  
-- **LinkedIn**: [linkedin.com/in/manavbansal39](https://linkedin.com/in/manavbansal39)  
-- **Email**: [bansalmanav39@gmail.com](mailto:bansalmanav39@gmail.com)  
+&copy; 2025 Manav Bansal. All Rights Reserved.
