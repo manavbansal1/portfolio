@@ -13,16 +13,16 @@
 }
 
 [data-theme='dark'] {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --bg-secondary: #111111;
-    --bg-card: rgba(30, 30, 30, 0.95);
-    --text-secondary: #a0a0a0;
-    --navbar-bg: #1a1a1a;
-    --navbar-shadow: rgba(255, 255, 255, 0.1);
-    --accent-color: #a78bfa;
-    --heading-color: #e5e7eb;
-    --nav-link-color: #d1d5db;
+    --background: #0f0518;
+    --foreground: #f3f4f6;
+    --bg-secondary: linear-gradient(135deg, #0f0518 0%, #2e1065 100%);
+    --bg-card: rgba(30, 15, 50, 0.7);
+    --text-secondary: #d1d5db;
+    --navbar-bg: rgba(15, 5, 24, 0.85);
+    --navbar-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    --accent-color: #c084fc;
+    --heading-color: #e9d5ff;
+    --nav-link-color: #e5e7eb;
     --nav-link-hover: #ffffff;
 }
 

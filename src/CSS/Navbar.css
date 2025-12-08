@@ -6,6 +6,8 @@
     border-radius: 16px;
     padding: 0.5rem;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .navbar-brand {
@@ -23,6 +25,8 @@
     text-decoration: none;
     font-size: 1.05rem;
     transition: 0.3s background-color;
+    border: none;
+    cursor: pointer;
 }
 
 .contact-button:hover {
@@ -77,7 +81,39 @@
     }
 
     .nav-link.active {
-        color: var(--nav-link-hover);
+        color: var(--nav-link-hover) !important;
         font-weight: 700;
+    }
+}
+
+/* Offcanvas (Sidebar) Dark Mode Support */
+.offcanvas {
+    background-color: var(--navbar-bg);
+    color: var(--foreground);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.offcanvas-header .btn-close {
+    color: var(--foreground);
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+}
+
+[data-theme='dark'] .offcanvas-header .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.offcanvas-title {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+@media (max-width: 991px) {
+    .nav-link {
+        color: var(--foreground);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        color: var(--accent-color) !important;
     }
 }
