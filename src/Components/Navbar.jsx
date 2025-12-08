@@ -1,12 +1,24 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../CSS/Navbar.css';
+import { useTheme } from 'next-themes';
+import { Sun, Moon } from 'lucide-react';
 
 export default function Navbar( {onContactClick}) {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   const handleLinkClick = () => {
     setIsOpen(false);
@@ -58,6 +70,14 @@ export default function Navbar( {onContactClick}) {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
+        </button>
+        <button 
+          className="theme-toggle-btn ms-3" 
+          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+          aria-label="Toggle theme"
+          style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit' }}
+        >
+          {theme === 'dark' ? <Sun size={24} /> : <Moon size={24} />}
         </button>
       </div>
       {isOpen && (

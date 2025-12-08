@@ -1,52 +1,60 @@
-.hero-section{
+.hero-section {
     position: relative;
     padding-top: 270px !important;
     min-height: 100vh;
     /* background-image: url(/public/background.jpg); */
-    background: linear-gradient(135deg, #f8f9ff 0%, #e8e5f3 100%);
+    background: var(--bg-secondary);
     background-size: cover;
     width: 100%;
+    transition: background 0.3s ease;
 }
-.hero-section::before{
+
+.hero-section::before {
     content: '';
     position: absolute;
     inset: 0;
     /* background: rgba(234, 234, 234, 0.6); */
 }
 
-.hero-content{
+.hero-content {
     z-index: 1;
     position: relative;
 }
 
-.image-box{
+.image-box {
     max-width: 350px;
     width: 75vw;
 }
-.hero-title{
+
+.hero-title {
     font-size: 3rem;
     font-family: 'Baloo Bhai 2', sans-serif;
     font-weight: 700;
-    color: #250738;
+    color: var(--heading-color);
     text-align: center;
 }
-.hero-text{
+
+.hero-text {
     font-family: 'baloo bhai 2', sans-serif;
     font-size: 1.3rem;
-    color: #0f0718;
+    color: var(--foreground);
     margin-top: 1rem;
     text-align: center;
     line-height: 1.6;
 }
 
 .social-icon {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.2s;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s, filter 0.3s ease;
+}
+
+[data-theme='dark'] .social-icon {
+    filter: invert(1);
 }
 
 .social-icon:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .contact-Me {
@@ -55,28 +63,33 @@
     justify-content: center;
     align-items: center;
 }
+
 @media (max-width: 992px) {
     .hero-content {
-        text-align: center; 
+        text-align: center;
     }
-    .hero-section{
+
+    .hero-section {
         padding-top: 140px !important;
     }
 
     .image-box {
-        margin-top: 2rem; 
+        margin-top: 2rem;
     }
 }
+
 @media (max-width: 576px) {
     .hero-title {
         margin-top: 20px;
-        font-size: 2.2rem; 
+        font-size: 2.2rem;
     }
+
     .hero-text {
-        font-size: 1.1rem; 
-        padding: 0 1rem; 
+        font-size: 1.1rem;
+        padding: 0 1rem;
     }
+
     .image-box {
-        max-width: 250px; 
+        max-width: 250px;
     }
 }

@@ -1,9 +1,10 @@
 .experience-page-container {
     padding-top: 140px;
-    background-color: rgb(214, 212, 212);
+    background-color: var(--bg-secondary);
     justify-content: center;
     align-items: center;
     text-align: center;
     min-width: 100%;
     min-height: 100vh;
+    transition: background-color 0.3s ease;
 }

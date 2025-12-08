@@ -14,7 +14,7 @@
 }
 
 .contact-modal {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--bg-card);
   backdrop-filter: blur(20px);
   border-radius: 20px;
   border: 1px solid rgba(139, 92, 246, 0.2);
@@ -48,7 +48,7 @@
 .close-btn {
   background: none;
   border: none;
-  color: #6b7280;
+  color: var(--text-secondary);
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 8px;
@@ -57,7 +57,7 @@
 
 .close-btn:hover {
   background: rgba(139, 92, 246, 0.1);
-  color: #6b46c1;
+  color: var(--accent-color);
 }
 
 .contact-form {
@@ -71,7 +71,7 @@
 .form-group label {
   display: block;
   font-weight: 600;
-  color: #374151;
+  color: var(--heading-color);
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
 }
@@ -84,7 +84,8 @@
   border-radius: 10px;
   font-size: 1rem;
   transition: all 0.3s ease;
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--background);
+  color: var(--foreground);
   backdrop-filter: blur(10px);
 }
 
@@ -93,12 +94,12 @@
   outline: none;
   border-color: #8b5cf6;
   box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--bg-card);
 }
 
 .form-group input:disabled,
 .form-group textarea:disabled {
-  background: rgba(239, 239, 239, 0.5);
+  background: var(--bg-secondary);
   cursor: not-allowed;
 }
 
@@ -177,6 +178,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -187,6 +189,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -197,12 +200,13 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
-.redStar{
+.redStar {
   color: red;
 }
 
@@ -212,19 +216,19 @@
     width: 95%;
     margin: 1rem;
   }
-  
+
   .modal-header {
     padding: 1.5rem 1.5rem 1rem;
   }
-  
+
   .modal-header h2 {
     font-size: 1.5rem;
   }
-  
+
   .contact-form {
     padding: 1.5rem;
   }
-  
+
   .form-group {
     margin-bottom: 1rem;
   }
@@ -236,11 +240,11 @@
     height: 100%;
     border-radius: 0;
   }
-  
+
   .modal-header {
     padding: 1rem;
   }
-  
+
   .contact-form {
     padding: 1rem;
   }

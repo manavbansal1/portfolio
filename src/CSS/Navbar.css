@@ -1,20 +1,23 @@
-.navbar{
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.navbar {
+    background-color: var(--navbar-bg);
+    box-shadow: 0 2px 4px var(--navbar-shadow);
     height: 80px;
     margin: 20px;
     border-radius: 16px;
     padding: 0.5rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-.navbar-brand{
+
+.navbar-brand {
     font-weight: 700;
     font-size: 2rem;
-    color: #531294;
+    color: var(--accent-color);
     transition: 0.3s color;
 }
-.contact-button{
-    background-color: #531294;
-    color: white;
+
+.contact-button {
+    background-color: var(--accent-color);
+    color: var(--background);
     padding: 8px 20px;
     border-radius: 20px;
     text-decoration: none;
@@ -22,34 +25,39 @@
     transition: 0.3s background-color;
 }
 
-.contact-button:hover{
-    background-color: #2f0476;
-    color: white;
+.contact-button:hover {
+    opacity: 0.9;
+    color: var(--background);
     text-decoration: none;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border: none;
     font-size: 1.25rem;
+    color: var(--foreground);
 }
 
-.navbar-toggler:focus, .btn-close:focus{
+.navbar-toggler:focus,
+.btn-close:focus {
     box-shadow: none;
     outline: none;
 }
 
-.nav-link{
+.nav-link {
     font-size: 1.15rem;
-    color: #666777;
+    color: var(--nav-link-color);
     font-weight: 500;
     position: relative;
-}
-.nav-link:hover, .nav-link:active{
-    color: #000;
+    transition: color 0.3s ease;
 }
 
-@media (min-width: 992px){
-    .nav-link::before{
+.nav-link:hover,
+.nav-link:active {
+    color: var(--nav-link-hover);
+}
+
+@media (min-width: 992px) {
+    .nav-link::before {
         content: '';
         position: absolute;
         left: 50%;
@@ -57,13 +65,19 @@
         transform: translateX(-50%);
         width: 0;
         height: 2px;
-        background-color: #531294;
+        background-color: var(--accent-color);
         visibility: hidden;
         transition: 0.3s ease-in-out;
     }
 
-    .nav-link:hover::before, .nav-link.active::before{
+    .nav-link:hover::before,
+    .nav-link.active::before {
         width: 100%;
         visibility: visible;
+    }
+
+    .nav-link.active {
+        color: var(--nav-link-hover);
+        font-weight: 700;
     }
 }
