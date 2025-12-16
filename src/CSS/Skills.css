@@ -44,7 +44,7 @@
     border-radius: 20px;
     padding: 2rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(139, 92, 246, 0.2);
+    border: 1px solid var(--border-accent);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -65,7 +65,7 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(135deg, #6b46c1 0%, #8b5cf6 50%, #a78bfa 100%);
+    background: var(--gradient-primary);
 }
 
 .category-title {
@@ -74,7 +74,7 @@
     color: var(--heading-color);
     margin-bottom: 1.5rem;
     text-align: center;
-    border-bottom: 2px solid rgba(139, 92, 246, 0.1);
+    border-bottom: 2px solid var(--border-accent-light);
     padding-bottom: 0.5rem;
 }
 
@@ -105,12 +105,12 @@
     transform: translateY(-50%);
     width: 4px;
     height: 16px;
-    background: linear-gradient(135deg, #6b46c1, #8b5cf6);
+    background: var(--gradient-text);
     border-radius: 2px;
 }
 
 .section-title.special {
-    color: #7c3aed;
+    color: var(--accent-color);
     font-weight: 700;
 }
 
@@ -145,7 +145,7 @@
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
-    border: 1px solid rgba(139, 92, 246, 0.1);
+    border: 1px solid var(--border-accent-light);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: default;
     position: relative;
@@ -164,10 +164,10 @@
 }
 
 .skill-pill:hover {
-    background: linear-gradient(135deg, #8b5cf6 0%, #6b46c1 100%);
+    background: var(--gradient-primary);
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 4px 12px var(--shadow-accent);
 }
 
 /* The white line effect on hover */
