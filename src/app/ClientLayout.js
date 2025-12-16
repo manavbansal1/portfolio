@@ -20,7 +20,7 @@ export default function ClientLayout({ children }) {
     }
 
     return (
-        <ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="data-theme" defaultTheme="light" enableSystem={false}>
             <Navbar onContactClick={openContactModal} />
             {children}
             <Contact
