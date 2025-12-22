@@ -6,8 +6,24 @@ import memoryImage from '../Imgs/custom-memory.png';
 import chatServerImage from '../Imgs/chatServer.png';
 import wanderwiseImage from '../Imgs/WanderWise.png';
 import pingmeImage from '../Imgs/pingme.png'
+import queryLabImage from '../Imgs/query-lab.png';
 
 const projectsData = [ 
+  {
+    title: "Query Lab",
+    role: "Creator & Developer",
+    date: "Aug. 2025 - Nov. 2025",
+    description: `
+- Built an interactive web platform for practicing SQL (SQLite) and MongoDB queries in the browser.
+- Implemented dual database support with sql.js for client-side SQL and MongoDB Atlas for cloud-based NoSQL.
+- Integrated Google Gemini AI to provide intelligent error explanations and query suggestions.
+- Designed a modern, responsive UI with Monaco Editor for syntax highlighting.
+`,
+    technologies: ["Next.js", "React", "MongoDB", "Gemini AI", "sql.js"],
+    image: queryLabImage,
+    github: "https://github.com/manavbansal1/query-lab",
+    website: "https://query-lab.vercel.app/"
+  },
   {
     title: "WanderWise",
     role: "Project Manager & Full Stack Developer",
