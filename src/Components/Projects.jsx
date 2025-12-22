@@ -7,8 +7,25 @@ import chatServerImage from '../Imgs/chatServer.png';
 import wanderwiseImage from '../Imgs/WanderWise.png';
 import pingmeImage from '../Imgs/pingme.png'
 import queryLabImage from '../Imgs/query-lab.png';
+import studySageImage from '../Imgs/StudySage.png';
 
 const projectsData = [ 
+  {
+    title: "StudySage",
+    role: "App & Web Developer",
+    date: "Sep. 2025 - Present",
+    description: `
+- Developed an AI-powered study companion app with real-time multiplayer games, gamified learning, and AI flashcard generation.
+- Built the Android app using Kotlin and Jetpack Compose, featuring MVVM architecture and 90+ concurrent threads for performance.
+- Implemented real-time collaboration features including study groups, live chat, and whiteboard sharing using Firebase and WebSockets.
+- Created "Quiz Race" and "Study Tac Toe" multiplayer games powered by a Ktor backend.
+- Integrated Gemini 1.5 Flash for AI summarization and content generation.
+`,
+    technologies: ["Kotlin", "Jetpack Compose", "Ktor", "Firebase", "Gemini AI", "Next.js"],
+    image: studySageImage,
+    github: "https://github.com/manavbansal1/StudySage",
+    website: "https://studysage.vercel.app/"
+  },
   {
     title: "Query Lab",
     role: "Creator & Developer",
