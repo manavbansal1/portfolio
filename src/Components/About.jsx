@@ -59,7 +59,7 @@ const About = () => {
                   <h3>Simon Fraser University</h3>
                   <p>Bachelor of Science in Computer Science</p>
                   <div className="gpa-highlight">
-                    <span className="gpa-number">4.28</span>
+                    <span className="gpa-number">4.27</span>
                     <span className="gpa-total">/4.33 GPA</span>
                   </div>
                 </div>
